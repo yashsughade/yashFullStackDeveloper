@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> form 2</title>
+    <style>
+        .input {
+            height: 50px;
+            width: 200px;
+        }
+
+        .back {
+            background-color: cornflowerblue;
+            background-image: url(./background_seascapes.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .label {
+            font-size: 40px;
+            color: lightgreen;
+        }
+
+        .textarea {
+            height: 70px;
+            width: 500px;
+        }
+
+        .legend {
+            color:lightcoral;
+            font-size: 40px;
+            border-style:solid ;
+        }
+        .submit{
+            height: 60px;
+            width: 190px;
+            background-color:aquamarine;
+            text-align: center;
+            margin-left: 40%;
+            font-size: 40px;
+        }
+        h1{
+            font-size:40px;
+            color:darkorange;
+            border-style:solid ;
+        }
+        body{
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <form class=" back">
+        <h1>Enjoy programming</h1>
+        <fieldset>
+            <legend class="legend">
+                Enter your details-:
+            </legend>
+            <label class="label"> Preferred batch timing -: </label>
+            <input class=" input" type="time"> to <input  class=" input" type="time">
+            <br>
+            <br>
+            <label class="label"> Preferred batch date -:</label>
+            <input class=" input" type="datetime-local">to <input   class=" input" type="datetime-local">
+            <br>
+            <br>
+            <label class="label">DOB-:</label>
+            <input class="input" type="datetime-local">
+            <br>
+            <br>
+            <label class=" label"> Email-:</label>
+            <input class=" input" type="email" placeholder="enter your email ">
+            <br>
+            <br>
+            <label class=" label"> Contact no-: </label>
+            <input class=" input" type="number">
+            <br>
+            <br>
+            <label class="label"> Communication skill(out of 10)-:</label>
+            <input class=" input " type="range">
+            <br>
+            <br>
+            <label class=" label"> Age:</label>
+            <input class=" input" type="number">
+            <br>
+            <br>
+            <label class="label"> Tell something about you-: </label>
+            <br>
+            <br>
+
+            <textarea class=" textarea"></textarea>
+            <br>
+            <br>
+            <br>
+            <!-- submit -->
+            <button class="submit"> <a href="lastpage.html"> submit</a></button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
