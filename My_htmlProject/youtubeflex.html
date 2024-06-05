@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> youtube Flex</title>
+    <style>
+        .main-container {
+            background-color: gray;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top {
+            background-color: aqua;
+            height: 10vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .one {
+            background-color: green;
+            width: 20vw;
+            font-size: 22px;
+            padding-top: 18px;
+            border-style: solid;
+            text-align: center;
+        }
+
+        .middle {
+            background-color: powderblue;
+            height: 80vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .middle-one {
+            background-color: blue;
+            width: 80vw;
+        }
+
+        .middle-two {
+            background-color: red;
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sec-top {
+            background-color: yellow;
+            height: 33vh;
+            border-style: solid;
+        }
+
+        .bottom {
+            background-color: skyblue;
+            height: 10vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .bottom-top {
+            background-color: cadetblue;
+            border-style: solid;
+            width: 25vw;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;">
+    <!-- main container -->
+    <div class="main-container">
+        <!-- top -->
+        <div class="top">
+            <div class="one">About</div>
+            <div class="one">Skills</div>
+            <div class="one">Personal Details</div>
+            <div class="one">Academic</div>
+            <div class="one">Visions</div>
+        </div>
+        <!-- middle -->
+        <div class="middle">
+            <div class="middle-one">
+                <video height="650vh" width="1000vw" controls>
+                    <source src="./sample video .mp4">
+                </video>
+            </div>
+            <div class="middle-two">
+                <div class="sec-top"><video height="200vh" width="300vw" controls>
+<source src="./sample video .mp4">
+                </video>
+            </div>
+                <div class="sec-top"><video height="200vh" width="300vw" controls>
+                    <source src="./sample video .mp4">
+                                    </video></div>
+                <div class="sec-top"><video height="200vh" width="300vw" controls>
+                    <source src="./sample video .mp4">
+                                    </video></div>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="bottom">
+            <div class="bottom-top">Follows us:</div>
+            <div class="bottom-top">Facebook</div>
+            <div class="bottom-top">Twitter</div>
+            <div class="bottom-top">Linkedin</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

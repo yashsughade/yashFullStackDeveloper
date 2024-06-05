@@ -1,10 +1,104 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-    
     <title>youtube by grid</title>
+    <style>
+        .main-container {
+            display: grid;
+            grid-template-rows: 1fr 7fr 1fr;
+            background-color: burlywood;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .first_row {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: lightcoral;
+        }
+
+        .first-one {
+            font-size: 35px;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        .second {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            background-color: yellow;
+        }
+
+        .second-one {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .third {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: aqua;
+        }
+
+        .third-one {
+            font-size: 35px;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        div {
+            border-style: solid;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- main container -->
+    <div class="main-container">
+        <!-- first row -->
+        <div class="first_row">
+            <div class="first-one">About</div>
+            <div class="first-one"> Personal Details</div>
+            <div class="first-one">Skills</div>
+            <div class="first-one">Visions</div>
+        </div>
+        <!-- second row -->
+        <div class="second">
+            <!-- secondrow first column -->
+            <div>
+                <video height="100%" width="100%" controls>
+                    <source src="./sample video .mp4">
+                </video>
+            </div>
+            <!-- second row second column -->
+            <div class="second-one">
+                <div>
+                    <video height="200vh" width="200vw" controls>
+                        <source src="./sample video .mp4">
+                    </video>
+                </div>
+                <div>
+                    <video height="200vh" width="200vw" controls>
+                    <source src="./sample video .mp4">
+                </video></div>
+                <div>
+                    <video height="200vh" width="200vw" controls>
+                        <source src="./sample video .mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- third row -->
+        <div class="third">
+            <div class="third-one"> Follow us-:</div>
+            <div class="third-one">Facebook</div>
+            <div class="third-one">Linkedin</div>
+            <div class="third-one">Twitter</div>
+        </div>
+    </div>
 </body>
+
 </html>
